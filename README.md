@@ -14,3 +14,14 @@ Submitted Proposal:
 
 - Pitch: This is a proof of concept for a generic eCommerce platform that could be used by any business with an online presence. This site will have an online catalog capable of housing a large inventory of products. There will be paypal integration and an admin panel for the site admin also.
 
+# Front End
+The front end was created using the React framework with Bootstrap. A theme was implemented using bootswatch with icons from font-awesome(cdnjs).  
+
+Multiple components were created using react & bootstrap
+HomeScreen
+
+# Back End
+Python and Django
+
+# Databases
+PostgreSQL
