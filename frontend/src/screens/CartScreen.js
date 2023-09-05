@@ -28,9 +28,17 @@ function CartScreen() {
         dispatch(removeFromCart(id))
     }
 
+    const userLogin = useSelector(state => state.userLogin)  
+    const { error, loading, userInfo } = userLogin
+
+
     const checkoutHandler = () => {
-        navigate('/login?redirect=shipping');
-    }
+        if (userInfo){
+          navigate('/shipping')
+        } else {
+          navigate('/login')
+        }
+      }
 
     return (
         <Row>

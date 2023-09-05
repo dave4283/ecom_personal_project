@@ -10,7 +10,7 @@ import { listProductDetails } from '../actions/productActions';
 function ProductScreen() {
     const [qty, setQty] = useState(1)
     const { id } = useParams();
-    let navigate = useNavigate();
+    let navigate = useNavigate(); //history is deprecated
     const dispatch = useDispatch();
     const productDetails = useSelector((state) => state.productDetails);
     const { loading, error, product } = productDetails;
