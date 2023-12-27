@@ -111,4 +111,8 @@ export const productCreateReducer = (state = {}, action) => {
             default: 
                 return state
             }
+<<<<<<< HEAD
         }
+=======
+        }
+>>>>>>> frontend

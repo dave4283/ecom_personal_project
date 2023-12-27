@@ -7,7 +7,11 @@ import {
     productDetailsReducer, 
     productDeleteReducer, 
     productCreateReducer,
+<<<<<<< HEAD
     productUpdateReducer,
+=======
+    productUpdateReducer
+>>>>>>> frontend
  } from './reducers/productReducers'
 
 import { cartReducer } from './reducers/cartReducers'

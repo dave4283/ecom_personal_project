@@ -166,6 +166,14 @@ export const updateProduct = (product) => async (dispatch, getState) => {
                 payload: data
         })
 
+<<<<<<< HEAD
+=======
+        dispatch({
+            type:PRODUCT_DETAILS_SUCCESS, 
+            payload: data
+        })
+
+>>>>>>> frontend
     } catch (error) {
         dispatch({
             type: PRODUCT_UPDATE_FAIL,
@@ -175,3 +183,8 @@ export const updateProduct = (product) => async (dispatch, getState) => {
         })
     }
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> frontend
