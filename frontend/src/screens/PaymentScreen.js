@@ -46,13 +46,11 @@ function PaymentScreen() {
                             </Form.Check>
                         </Col>
                     </FormGroup>
-
                     <div className='my-3'>
                         <Button type="submit" variant="primary">
                             Continue
                         </Button>
                     </div>
-
                 </Form>
             </FormContainer>
         )
