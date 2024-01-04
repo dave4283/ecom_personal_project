@@ -9,7 +9,13 @@ from rest_framework import status
 # gets json of all products
 @api_view(['GET'])
 def getProducts(request):
-    products = Product.objects.all()
+    
+    query = request.query_params.get('keyword')
+    
+    if query == None:
+        query = ''
+    
+    products = Product.objects.filter(name__icontains=query)
     serializer = ProductSerializer(products, many=True)
     return Response(serializer.data)
 

@@ -26,11 +26,19 @@ import {
 
  } from '../constants/productConstants'
 
-export const listProducts = () => async (dispatch) => {
+export const listProducts = (keyword) => async (dispatch) => {
     try{
         dispatch({ type: PRODUCT_LIST_REQUEST })
 
-        const { data } = await axios.get('/api/products/')
+        //updated
+        let url = '/api/products'; 
+ 
+        if (keyword) {
+            url += `?keyword=${keyword}`; 
+        }
+        //end update
+
+        const { data } = await axios.get(url)
 
         dispatch ({
             type: PRODUCT_LIST_SUCCESS,
