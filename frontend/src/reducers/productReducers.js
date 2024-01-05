@@ -29,7 +29,6 @@ import {
 
 } from '../constants/productConstants'
 
-
 export const productListReducer = (state = { products:[] }, action) => {
     switch(action.type) {
         case PRODUCT_LIST_REQUEST:
@@ -81,7 +80,6 @@ export const productDeleteReducer = (state = {}, action) => {
         }
     }
     
-
 export const productCreateReducer = (state = {}, action) => {
     switch(action.type) {
         case PRODUCT_CREATE_REQUEST:
