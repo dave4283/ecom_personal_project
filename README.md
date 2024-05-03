@@ -17,11 +17,15 @@ Submitted Proposal:
 # Front End
 The front end was created using the React framework with Bootstrap. A theme was implemented using bootswatch with icons from font-awesome(cdnjs).  
 
-Multiple components were created using react & bootstrap
-HomeScreen
+Multiple components were created using react & bootstrap. Redux used for state management. 
+
+Many different features were implemented including: Shopping Cart, Product Reviews & Ratings, Top products banner, Search Bar, User profile, Admin panel w/ Product & User management, 
+Admin Order Details, Mark orders as paid and delivered, Paypal & CC API button integration. 
+
+Authorization using JWT (JSON WEB Tokens)
 
 # Back End
-Python and Django
+Python Django backend w/ Models.py for postgreSQL schema / tables. 
 
 # Databases
 PostgreSQL
